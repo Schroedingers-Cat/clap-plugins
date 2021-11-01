@@ -4,3 +4,6 @@
 [submodule "vcpkg"]
 	path = vcpkg
 	url = git://github.com/microsoft/vcpkg
+[submodule "clap-helpers"]
+	path = clap-helpers
+	url = git://github.com/free-audio/clap-helpers

@@ -5,6 +5,8 @@
 #include <sstream>
 #include <thread>
 
+#include <clap/helpers/plugin.hxx>
+
 #include "core-plugin.hh"
 #include "stream-helper.hh"
 

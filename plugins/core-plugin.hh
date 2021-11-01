@@ -2,14 +2,14 @@
 
 #include <memory>
 
-#include <clap-plugin.hh>
+#include <clap/helpers/plugin.hh>
 
 #include "parameters.hh"
 #include "path-provider.hh"
 #include "remote-gui.hh"
 
-#include "../common/param-queue.hh"
-#include "../common/reducing-param-queue.hxx"
+#include <clap/helpers/param-queue.hh>
+#include <clap/helpers/reducing-param-queue.hxx>
 
 namespace clap {
    class CorePlugin : public Plugin {
@@ -170,8 +170,8 @@ namespace clap {
          double mod;
       };
 
-      ParamQueue<GuiToPluginValue, 32> _guiToPluginQueue;
-      ReducingParamQueue<PluginToGuiValue> _pluginToGuiQueue;
+      helpers::ParamQueue<GuiToPluginValue, 32> _guiToPluginQueue;
+      helpers::ReducingParamQueue<clap_id, PluginToGuiValue> _pluginToGuiQueue;
 
       std::unique_ptr<PathProvider> _pathProvider;
 
