@@ -19,4 +19,4 @@ git submodule init
 git submodule update
 ```
 
-You can now open the project with CMake and configure & generate the solutions. CMake should be able to automatically detect vcpkg, bootstrap and acquire the necessary packages. This will take some time because `qtdeclarative` will be downloaded and built from source on your machine. However, this is necessary only once after cloning.  
+You can now open the project with CMake, select the `Visual Studio + VCPKG` preset and configure & generate the solutions (tested with VS 2019). CMake should be able to automatically detect vcpkg, bootstrap and acquire the necessary packages. This will take some time because `qtdeclarative` will be downloaded and built from source on your machine. However, this is necessary only once after cloning.  
