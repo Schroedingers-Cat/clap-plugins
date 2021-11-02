@@ -24,6 +24,19 @@
           "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
         }
       }
+    },
+    {
+      "name": "vs-vcpkg",
+      "displayName": "Visual Studio + VCPKG",
+      "description": "Configure with vcpkg toolchain and generate VS project files for all configurations",
+      "binaryDir": "${sourceDir}/builds/${presetName}",
+      "generator": "Visual Studio 16 2019",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": {
+          "type": "FILEPATH",
+          "value": "./vcpkg/scripts/buildsystems/vcpkg.cmake"
+        }
+      }
     }
   ],
   "buildPresets": [
