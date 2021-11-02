@@ -1,9 +1,9 @@
 [submodule "clap"]
 	path = clap
-	url = git://github.com/free-audio/clap
+	url = ../clap
 [submodule "vcpkg"]
 	path = vcpkg
-	url = git://github.com/microsoft/vcpkg
+	url = ../../microsoft/vcpkg
 [submodule "clap-helpers"]
 	path = clap-helpers
-	url = git://github.com/free-audio/clap-helpers
+	url = ../clap-helpers
